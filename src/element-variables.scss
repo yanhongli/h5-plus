@@ -1,0 +1,395 @@
+/*
+Write your variables here. All available variables can be
+found in element-ui/packages/theme-chalk/src/common/var.scss.
+For example, to overwrite the theme color:
+*/
+// $--color-primary: teal;
+
+@import "./assets/font/iconfont.css";
+
+* {
+  font-family: PingFangSC "Microsoft YaHei";
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(250, 250, 250, 1);
+}
+
+html {
+  font-size: 14px;
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #303133;
+
+    &:hover,
+    &:visited {
+      color: #303133;
+    }
+  }
+
+  .fr {
+    float: right;
+  }
+
+  .fl {
+    float: left;
+  }
+
+  .clear:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+/* icon font path, required */
+$--font-path: "~element-ui/lib/theme-chalk/fonts";
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+// .el-date-range-picker .el-picker-panel__body {
+//   width: 500px;
+// }
+
+$datepicker-sliderbar-width: 80px;
+
+// .el-picker-panel__content.el-date-range-picker__content.is-right {
+//   display: none;
+// }
+.el-date-range-picker__header div {
+  font-size: 12px;
+}
+
+.el-select-dropdown__item.selected {
+  font-weight: normal;
+}
+
+.el-date-range-picker.has-sidebar {
+  width: 600px;
+}
+
+.el-picker-panel *[slot="sidebar"] + .el-picker-panel__body,
+.el-picker-panel__sidebar + .el-picker-panel__body {
+  margin-left: $datepicker-sliderbar-width;
+}
+
+.el-picker-panel__body-wrapper {
+  // width: 500px;
+  .el-picker-panel__sidebar {
+    width: $datepicker-sliderbar-width;
+    padding: 0;
+
+    button {
+      font-size: 12px;
+      height: 24px;
+      line-height: 24px;
+    }
+  }
+
+  .el-picker-panel__content {
+    padding: 2px;
+
+    .el-date-table__row {
+      td {
+        // width: 24px;
+        // height: 24px;
+        padding: 2px 0;
+
+        & > div {
+          // height: 22px;
+          // width: 100%;
+          // height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.el-pagination {
+  .el-pagination__jump {
+    float: right;
+  }
+
+  .el-pager {
+    float: right;
+  }
+}
+
+.el-card__header {
+  height: 68px;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  margin: 0 15px;
+  line-height: 30px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.el-table {
+  thead {
+    height: 54px;
+    border-radius: 4px 4px 0px 0px;
+
+    th {
+      background: rgba(250, 250, 250, 1);
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.85);
+
+      & > .cell {
+        // padding: 0 5px;
+      }
+    }
+  }
+}
+
+.el-dialog__header {
+  background: url("./assets/images/dialog-header-icon.png") no-repeat right,
+    linear-gradient(315deg, rgba(11, 157, 236, 1) 0%, rgba(0, 111, 208, 1) 100%);
+
+  .el-dialog__title {
+    color: white;
+    font-size: 16px;
+  }
+
+  .el-dialog__headerbtn .el-dialog__close {
+    color: white;
+  }
+}
+
+.body-warning {
+  background: url("./assets//images//dialog-body-warning.png") no-repeat center;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.mr-10 {
+  margin-right: 10px !important;
+}
+
+.mr-20 {
+  margin-right: 20px !important;
+}
+
+.mr-30 {
+  margin-right: 30px !important;
+}
+
+.mr-50 {
+  margin-right: 50px !important;
+}
+
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+}
+.mt-50 {
+  margin-top: 50px !important;
+}
+
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+
+.ml-50 {
+  margin-left: 50px !important;
+}
+
+.text-black {
+  color: black !important;
+}
+
+.gray {
+  color: #a6a6a6 !important;
+}
+
+.light-blue {
+  color: #0e95e8 !important;
+}
+
+.black-bold {
+  color: black !important;
+  font-weight: bold !important;
+}
+
+.f-12 {
+  font-size: 12px !important;
+}
+
+.f-14 {
+  font-size: 14px !important;
+}
+
+.f-15 {
+  font-size: 15px !important;
+}
+
+.f-16 {
+  font-size: 16px !important;
+}
+
+.mw-600 {
+  min-width: 600px;
+}
+
+.validate-text {
+  position: absolute;
+  color: red;
+  margin-top: 2px;
+  line-height: 20px;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// .top-list thead {
+//   th {
+//     background: rgba(232, 244, 255, 1);
+
+//     .cell {
+//       height: 22px;
+//       font-size: 14px;
+//       font-family: PingFangSC-Medium, PingFang SC;
+//       font-weight: 500;
+//       color: rgba(4, 134, 254, 1);
+//       line-height: 22px;
+//     }
+//   }
+// }
+
+.c-row {
+  margin-bottom: 22px;
+  line-height: 20px;
+}
+
+.c-tooltip {
+  background: rgba(255, 255, 255, 1) !important;
+  color: black !important;
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border: 1px solid rgba(216, 220, 230, 1);
+  line-height: 17px;
+
+  .popper__arrow {
+    display: none !important;
+  }
+}
+
+.el-button.btn-n-width {
+  width: 90px;
+  height: 30px;
+  line-height: 0;
+}
+
+.el-tabs__nav-wrap::after {
+  height: 0;
+}
+
+.el-tabs__nav {
+  .el-tabs__item {
+    padding: 0 20px !important;
+    border: 1px solid rgba(224, 227, 235, 1);
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    &.is-active {
+      border-color: rgba(4, 134, 254, 1);
+    }
+    &:nth-of-type(2){
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+    &:last-of-type {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+}
+
+.el-tabs__active-bar {
+  display: none;
+}
+.icon-question {
+  background: url("./assets/images/icon-question.png");
+  height: 16px;
+  width: 16px;
+  background-size: cover;
+  display: inline-block;
+}
+
+.el-radio__label {
+  font-size: 12px;
+}
+.el-radio{
+  margin-right: 15px;
+}
+.data-none {
+  color: rgb(152, 152, 152);
+  font-size: 12px;
+}
+.op-link-group {
+  .op-link {
+    color: #1890ff;
+    padding: 0 5px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 12px;
+    &:not(:last-of-type) {
+      border-right: 1px solid #dbdbdb;
+    }
+    &.disabled {
+      pointer-events: none;
+      cursor: not-allowed;
+      color: gray;
+    }
+    a{
+      color: #1890ff !important;
+    }
+  }
+}
+
+
+.row-expand-cover td:first-child .el-icon-arrow-right {
+  visibility: hidden;
+}
